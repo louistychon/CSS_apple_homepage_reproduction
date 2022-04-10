@@ -6,14 +6,15 @@
             align-items: center;
             justify-content: flex-start;
         }
-        .navbar img{
-            margin-left:47%;
-        }
 
         .hamburger{
-            display:block;
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+            padding-left: 1%;
+            padding-right: 2%;
             color:white;
-            margin-left:1%;
+            align-items: center;
         }
 
         .hamburger i{
@@ -24,10 +25,53 @@
         #unicef{
             flex-direction: column;
         }
+
+        .logo_menu{
+            display:none;
+        }
+
+        .row-copyright, .menu_left{
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+        .footer-content{
+            width:98%;
+        }
 }
 
 @media screen and (max-width:768px){
     #grid{
         grid-template-columns: 1fr;
+    }
+    .container-col{
+        flex-wrap:wrap;
+        justify-content: flex-start;
+        padding:0;
+    }
+    .col{
+        flex-direction: row;
+        width:100%;
+    }
+
+    .row-copyright{
+        width:100%;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    h3{
+        margin-top:1%;
+        border-bottom:1px solid grey;
+        font-weight: 100;
+        width:100%;
+    }
+
+    h3::after{
+        content:"+";
+        width:100%;
+        margin-left: auto;
+        text-align: right;
     }
 }
