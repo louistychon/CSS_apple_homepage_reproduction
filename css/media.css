@@ -1,77 +1,110 @@
-@media screen and (max-width:1000px){
-        .navbar>ul{
-            display:none;}
-
-        .navbar{
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .hamburger{
-            display:flex;
-            justify-content: space-between;
-            width:100%;
-            padding-left: 1%;
-            padding-right: 2%;
-            color:white;
-            align-items: center;
-        }
-
-        .hamburger i{
-            width:100%;
-            height:100%;
-        }
-
-        #unicef{
-            flex-direction: column;
-        }
-
-        .logo_menu{
-            display:none;
-        }
-
-        .row-copyright, .menu_left{
-            flex-direction: row;
-            flex-wrap:wrap;
-        }
-        .footer-content{
-            width:98%;
-        }
+@media screen and (max-width:5000px){
+    .list-footer{
+        display:block;
+    }
 }
 
-@media screen and (max-width:768px){
-    #grid{
-        grid-template-columns: 1fr;
-    }
-    .container-col{
-        flex-wrap:wrap;
-        justify-content: flex-start;
-        padding:0;
-    }
-    .col{
-        flex-direction: row;
-        width:100%;
-    }
 
-    .row-copyright{
-        width:100%;
-    }
-
-    footer ul{
+@media screen and (max-width:1000px){
+    .navbar>ul {
         display: none;
     }
 
-    h3{
-        margin-top:1%;
-        border-bottom:1px solid grey;
-        font-weight: 100;
-        width:100%;
+    .menu-long{
+        display:none;
     }
 
-    h3::after{
-        content:"+";
-        width:100%;
-        margin-left: auto;
-        text-align: right;
+    .navbar {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 2%;
+        color: white;
+        align-items: center;
+    }
+
+    .hamburger i {
+        width: 100%;
+        height: 100%;
+    }
+
+    #unicef {
+        flex-direction: column;
+    }
+
+    .logo_menu {
+        display: none;
+    }
+
+    .row-copyright,
+    .menu_left {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container-col {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .col {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em
+    }
+
+    #iphone13 {
+        background-image: url("/images/hero_iphone13pro_avail__iy77cld0zwii_small_2x.jpg");
+    }
+
+    #iphoneSE {
+        background-image: url("/images/hero_iphonese_avail__eg8srhcnpo66_small.jpg");
+    }
+
+    #applewatch {
+        background-image: url("/images/hero_watch_lte__b8er858e34gi_small.jpg");
+    }
+
+    .row-copyright {
+        width: 100%;
+    }
+
+
+    footer h3 {
+        margin-top: 1%;
+        border-bottom: 1px solid grey;
+        padding-bottom: 15px;
+        font-weight: 100;
+        width: 100%;
+        cursor: pointer;
+        position:relative;
+    
+    }
+
+    footer h3::after {
+        content: "+";
+        float: right;
+        margin-bottom: 15px;
+        margin-right: 10px;
     }
 }

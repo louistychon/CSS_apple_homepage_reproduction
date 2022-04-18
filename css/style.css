@@ -59,11 +59,22 @@ nav{
     display: inline-block;
     white-space: nowrap;
 }
+.menu-long>ul{
+    display:flex;
+    align-items: center;
+}
+.menu-long>ul>li{
+    margin-right:20px;
 }
 
 .logo_menu{
     margin-top: auto;
     margin-bottom: auto;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:15px;
+
 }
 
 li>a{
@@ -175,10 +186,6 @@ li>a{
     text-align: center;
 }
 .hamburger{
-    display:none;
-}
-
-.menu-long{
     display:none;
 }
 
